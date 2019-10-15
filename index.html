@@ -10,7 +10,7 @@
   <meta name="author" content="kjt299">
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <link rel="icon" href="logo.svg" type="image/gif" sizes="16x16">
+  <link rel="icon" href="src/assets/logo.svg" type="image/gif" sizes="16x16">
   <link href="src/index.css" rel="stylesheet">
 </head>
 
@@ -166,9 +166,22 @@
       </div>
     </section>
     <section id="contact">
-      <h2>Contact</h2>
-    </section>
+        <h2>Contact</h2>
+        <p>Would you like to work together or just say "Hello "? Please feel free to send me a message by
+          using the form below.</p>
+        <form method="post" action="src/contact.php">
+          <label for="name">Name:</label>
+          <input type="text" name="name" required/><br />
+          <label for="email">Email Address:</label>
+          <input type="text" name="email"  required /><br />
+          <label for="message">Message:</label>
+          <textarea rows="4 " cols="50 " name="message" required></textarea><br />
+          <input type="text" id="url" name="url"/>
+          <input id="submit" type="submit" value="Submit" name="submit" />
+        </form>
+      </section>
   </main>
+  <footer>&copy; Copyright 2019 kjt299</footer>
   <script src="https://kit.fontawesome.com/a70a199fa0.js" crossorigin="anonymous"></script>
   <script src="src/index.js"></script>
 </body>
