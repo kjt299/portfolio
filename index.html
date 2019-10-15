@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio">
+  <meta name="author" content="kjt299">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.svg" type="image/gif" sizes="16x16">
+  <link href="src/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav id="nav">
+      <div id="burger-div" onclick="toogleBurger()">
+        <i id="burger" class="fas fa-bars"></i>
+      </div>
+      <ul id="navbar">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <h1>Front End Web Developer </h1>
+    <a href="#about"><button id="explore-btn" type="button">EXPLORE&nbsp;&nbsp;&nbsp;<i class="arrow right"></i></button></a>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <div>
+        <p>Hi! My name is Kinga. I am a graduate with an ambitious drive to gain commercial experience in developing innovative and creatvie web and mobile solutions.</p>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="progressbar">
+          <div id="html"></div>
+        </div>
+        <div class="skill-name">CSS</div>
+        <div class="progressbar">
+          <div id="css"></div>
+        </div>
+        <div class="skill-name">JavaScript</div>
+        <div class="progressbar">
+          <div id="javascript"></div>
+        </div>
+        <div class="skill-name">jQuery</div>
+        <div class="progressbar">
+          <div id="jquery"></div>
+        </div>
+        <div class="skill-name">ReactJS</div>
+        <div class="progressbar">
+          <div id="reactjs"></div>
+        </div>
+        <div class="skill-name">Git</div>
+        <div class="progressbar">
+          <div id="git"></div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div id="chingu">
+        <p>I joined the <a href="https://www.chingu.io/"><strong>Chingu</strong></a> Project on February 2019. Since then, I had an opportunity to collaborate with people from all around the world and experience what it is like to code and work in a team
+          with other developers.</p>
+      </div>
+      <div class="projects">
+        <div class="text">
+          <h3>Brexit Planner</h3>
+          <div class="project-description">
+            <ul>
+              <li>Developed the "Brexit Planner" App with 2 other developers.</li>
+              <li>Integrated the Skyscanner Travel API.</li>
+              <li>Implemented responsive design and navigation between components.</li>
+              <li>Influenced the overall look of the application.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="img-container">
+          <a href="https://brexit-planner.netlify.com/"><img class="project-img" src="src/assets/chingu-clone.png" alt="Brexit Planner"></a>
+          <ul>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">ReactJS</li>
+            <li class="tag">Skyscanner API</li>
+          </ul>
+        </div>
+      </div>
+      <div class="projects reverse">
+        <div class="img-container">
+          <a href="https://chingu-voyages.github.io/v8-toucans-team-09/"><img class="project-img" src="src/assets/chingu-clone.png" alt="Chingu Clone"></a>
+          <ul>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+          </ul>
+        </div>
+        <div class="text">
+          <h3>Landing Page Clone</h3>
+          <div class="project-description">
+            <ul>
+              <li>In a team of 3, developed a clone of the "Chingu" website.</li>
+              <li>Worked on the navigation, header and the topmost section.</li>
+              <li>Implemented responsive design.</li>
+              <li>Utilised CSS Flexbox Layout.</li>
+              <li>Co-created the custom pre-loader animation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="solo">
+        <p>Below you can find some of my <strong>personal</strong> projects...</p>
+      </div>
+      <div class="projects">
+        <div class="text">
+          <h3>London’s Sights and Landmarks</h3>
+          <div class="project-description">
+            <ul>
+              <li>Displays the map of London with some of the key sights and landmarks.</li>
+              <li>Sidebar is scrollable and can be used to filter landmarks marked on the map as well as the their addresses located in the sidebar.</li>
+              <li>Pop-up with the landmark’s name displays once the marker on the map is clicked.</li>
+              <li>Search function is case insensitive.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="img-container">
+          <a href="https://kjt299.github.io/Mapbox-App"><img class="project-img" src="src/assets/mapbox-app.png" alt="London’s Sights and Landmarks"></a>
+          <ul>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">Mapbox API</li>
+          </ul>
+        </div>
+      </div>
+      <div class="projects reverse">
+        <div class="img-container">
+          <a href="https://kjt299.github.io/memory_game"><img id="game" class="project-img" src="src/assets/memory-game.png" alt="Memory Card Game"></a>
+          <ul>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">jQuery</li>
+            <li class="tag">Bootstrap</li>
+          </ul>
+        </div>
+        <div class="text">
+          <h3>Memory Card Game</h3>
+          <div class="project-description">
+            <ul>
+              <li>Displays the 4 x 4 grid with cards.</li>
+              <li>Clicking on the card reveals it's colour.</li>
+              <li>Once card has been clicked it is not possible to revert it without revealing the next card.</li>
+              <li>Matched pairs disappear from the grid.</li>
+              <li>At the end of the game users can see how many moves it took them to win the game.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+    </section>
+  </main>
+  <script src="https://kit.fontawesome.com/a70a199fa0.js" crossorigin="anonymous"></script>
+  <script src="src/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+i {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+h1 {
+  font-size: 45px;
+  margin-top: 35%;
+  text-shadow: 5px 10px 10px #4f4f4e;
+}
+
+header {
+  color: white;
+  height: 100vh;
+  background-image: url("assets/port2.jpg");
+  text-align: center;
+  overflow: hidden;
+}
+
+header nav {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  padding-bottom: 10px;
+}
+
+header button {
+  margin-top: 10%;
+  background: none;
+  border: none;
+  font-size: 30px;
+  background-color: #fe0561;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+header button:hover {
+  opacity: 0.7;
+}
+
+header ul {
+  display: none;
+}
+
+header ul li {
+  display: block;
+  margin: 10px auto;
+  border: none;
+}
+
+header ul li a {
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+#burger {
+  border: none;
+  font-size: 25px;
+}
+
+#burger-div {
+  text-align: left;
+  margin: 10px 20px;
+  margin-bottom: 0;
+}
+
+.active {
+  display: unset;
+}
+
+h2 {
+  font-size: 40px;
+  padding: 30px;
+  font-weight: bolder;
+  color: #fe0561;
+  text-shadow: 5px 5px 10px #f57aa7;
+}
+
+#about div,
+#chingu p,
+#solo p,
+#projects p {
+  font-size: 16px;
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+#about div,
+#projects p {
+  color: #3e3f40;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #dbdbdb;
+  margin: 5px 10px;
+  padding: 20px 20px;
+}
+
+.reverse {
+  flex-direction: column-reverse;
+}
+
+.skill-name {
+  font-size: 24px;
+  margin: 20px;
+  color: #3e3f40;
+  font-weight: bolder;
+}
+
+.progressbar {
+  width: 270px;
+  margin: 20px auto;
+  background-color: #acacad;
+  border-radius: 13px;
+  padding: 3px;
+  text-align: center;
+}
+
+.progressbar div {
+  background-color: #cbf40c;
+  height: 20px;
+  border-radius: 10px;
+}
+
+#html {
+  width: 240px;
+}
+
+#css {
+  width: 170px;
+}
+
+#javascript {
+  width: 170px;
+}
+
+#jquery {
+  width: 140px;
+}
+
+#reactjs {
+  width: 135px;
+}
+
+#git {
+  width: 170px;
+}
+
+h3 {
+  font-size: 30px;
+  color: #039dfc;
+  text-shadow: 5px 5px 10px #5ab5ed;
+  font-weight: bolder;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.project-description {
+  width: 270px;
+  font-size: 16px;
+  margin: 20px auto;
+  color: #3e3f40;
+  text-align: left;
+}
+
+.project-description ul li {
+  margin: 5px 15px;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px grey;
+}
+
+#solo p {
+  padding-top: 15px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px 5px;
+  background-color: #cbf40c;
+  color: #3e3f40;
+  font-weight: bolder;
+  box-shadow: 0 0 10px grey;
+  border-radius: 15px;
+}
+
+#about,
+#skills,
+#projects,
+#contact {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#about,
+#projects {
+  background-color: #ebebeb;
+}
+
+.img-container {
+  padding: 15px 15px;
+  padding-bottom: 30px;
+  margin-top: 5px;
+}
+
+#projects .img-container ul {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #3e3f40;
+}
+
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  #about div,
+  #chingu p,
+  #solo p,
+  #projects p {
+    font-size: 22px;
+    width: 400px;
+  }
+
+  .project-description {
+    width: 400px;
+    font-size: 22px;
+  }
+
+  .img-container {
+    padding: 15px 15px;
+    padding-bottom: 30px;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  .tag {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+  }
+}
+/* big screen header ul li a:hover {
+    color: #cbf40c;
+    border: none;
+  }*/
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 70px;
+    margin-top: 25%;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  #about div,
+  #chingu p,
+  #solo p,
+  #projects p {
+    font-size: 22px;
+    width: 400px;
+  }
+
+  .project-description {
+    width: 400px;
+    font-size: 22px;
+  }
+
+  .img-container {
+    padding: 15px 15px;
+    padding-bottom: 30px;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+
+  .tag {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  header nav {
+    text-align: right;
+    padding: 30px 0;
+  }
+
+  header ul {
+    display: unset;
+  }
+
+  header ul li {
+    display: inline;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  header ul li a {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+  }
+
+  header ul li a:hover {
+    color: #cbf40c;
+    border: 2px solid #cbf40c;
+  }
+
+  .skill,
+  .projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  .projects {
+    grid-template-columns: 500px 500px;
+    grid-column-gap: 10%;
+    text-align: center;
+    margin: 30px;
+  }
+
+  header button {
+    margin-top: 5%;
+  }
+}
