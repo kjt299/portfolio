@@ -15,6 +15,10 @@ i {
   margin-bottom: 3px;
 }
 
+.fa-github, .fa-globe{
+  border: none;
+}
+
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -55,6 +59,13 @@ header button {
 
 header button:hover {
   opacity: 0.7;
+  cursor: pointer;
+}
+
+
+.link:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 header ul {
@@ -277,11 +288,12 @@ textarea {
 }
 
 input {
-  height: 20px;
+  height: 25px;
 }
 
 #submit:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 #submit {
